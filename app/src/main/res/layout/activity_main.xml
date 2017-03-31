@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quoctuan.demobasiccontrols.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtChuyenDoi"
+        android:text="Chuyển đổi năm dương lịch"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:background="#008000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtChuyenDoi"
+        android:id="@+id/txtNamDuong"
+        android:text="Năm dương lịch : "
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtChuyenDoi"
+        android:layout_toRightOf="@id/txtNamDuong"
+        android:id="@+id/editNamDuong"
+        android:inputType="number"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNamDuong"
+        android:layout_toRightOf="@id/txtNamDuong"
+        android:id="@+id/btnChuyenDoi"
+        android:text="Chuyển dổi"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/btnChuyenDoi"
+        android:id="@+id/txtNamAmLich"
+        android:text="Năm âm lịch : "
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnChuyenDoi"
+        android:layout_toRightOf="@id/txtNamAmLich"
+        android:id="@+id/txtNamAm"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="#FFFF00"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNamAm"
+        android:background="#008000"
+        android:textSize="18dp"
+        />
+
+
+</RelativeLayout>
